@@ -21,8 +21,8 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Layers, AlertCircle } from "lucide-react";
 
 const formSchema = z.object({
-  editalId: z.string().transform(val => Number(val)),
-  value: z.string().transform(val => Number(val)),
+  editalId: z.string().min(1, "ID do edital é obrigatório").transform(val => Number(val)),
+  value: z.string().min(1, "Valor é obrigatório").transform(val => Number(val)),
   description: z.string().min(20, { message: "Descrição precisa ter pelo menos 20 caracteres." }),
 });
 
@@ -46,7 +46,12 @@ const ProposalSubmission = () => {
     
     setIsSubmitting(true);
     try {
-      await submitProposal(data.editalId, data.value, data.description);
+      // Convert the form values to numbers using the transformations defined in the schema
+      await submitProposal(
+        data.editalId, // This is already transformed to number by the schema
+        data.value,    // This is already transformed to number by the schema
+        data.description
+      );
       form.reset();
     } catch (error) {
       console.error("Error submitting proposal:", error);
