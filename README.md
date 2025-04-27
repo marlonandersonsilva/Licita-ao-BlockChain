@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+# 🔒 Licita-ao-BlockChain
 
-## Project info
 
-**URL**: https://lovable.dev/projects/3651dfba-5720-4e36-997c-9cb6fd7fe4ef
+## 📝 Descrição do Projeto
+Sistema de Licitações Blockchain com alta segurança e transparência para processos de contratação pública.
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/3651dfba-5720-4e36-997c-9cb6fd7fe4ef) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
+## 🚀 Tecnologias Principais
+- Blockchain Hyperledger Fabric
+- Node.js
 - TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- React Native
+- Kubernetes
 
-## How can I deploy this project?
+## 🔧 Arquitetura
+- Microserviços distribuídos
+- Blockchain permissionada
+- Segurança multicamadas
 
-Simply open [Lovable](https://lovable.dev/projects/3651dfba-5720-4e36-997c-9cb6fd7fe4ef) and click on Share -> Publish.
+## ✨ Funcionalidades
+- Registro digital de licitações
+- Propostas criptografadas
+- Assinatura digital
+- Auditoria transparente
+- Anti-fraude
 
-## Can I connect a custom domain to my Lovable project?
+## 📦 Pré-requisitos
+- Docker
+- Kubernetes
+- Node.js 16+
+- Git
 
-Yes, you can!
+## 🛠️ Instalação
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Clonar Repositório
+```bash
+git clone https://github.com/marlonandersonsilva/Licita-ao-BlockChain
+.git
+cd secure-bid-ledger
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# Instalar dependências
+npm install
+
+# Configurar variáveis
+cp .env.example .env
+
+# Iniciar infraestrutura
+docker-compose up
+
+🔐 Segurança
+Criptografia AES-256
+Autenticação OAuth
+Conformidade LGPD
+Assinatura digital ICP-Brasil
+
+📊 Arquitetura Blockchain
+Rede: Hyperledger Fabric
+Consenso: Raft
+Smart Contracts: Golang
+
+🤝 Como Contribuir
+Faça um Fork
+Crie branch feature
+Commit suas alterações
+Push para branch
+Abra um Pull Request
+
+📄 Licença
+MIT License
+👥 Equipe
+Marlon Anderson - Arquiteto de Software
